@@ -1,15 +1,15 @@
 {
     "name": "@hazmihaz/paginate",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Paginate - generate ellipsis-separated pagination - fast and easy",
     "homepage": "",
     "author": "Hazmi Hafiz <hazmihafiz@gmail.com>",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/hazmihaz/paginate"
     },
     "license": "MIT",
-    "github": "",
+    "github": "https://github.com/hazmihaz/paginate",
     "keywords": [
         "pagination",
         "paginator",
@@ -17,7 +17,7 @@
     ],
     "main": "./index.js",
     "scripts": {
-        "test": "mocha"
+        "test": "mocha -w"
     },
     "devDependencies": {
         "mocha": "^8.2.1",
