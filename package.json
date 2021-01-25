@@ -21,9 +21,7 @@
     },
     "devDependencies": {
         "mocha": "^8.2.1",
-        "mocha-each": "^2.0.1"
-    },
-    "dependencies": {
+        "mocha-each": "^2.0.1",
         "chai": "^4.2.0"
     }
 }
