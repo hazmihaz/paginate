@@ -1,6 +1,6 @@
 {
     "name": "@hazmihaz/paginate",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Paginate - generate ellipsis-separated pagination - fast and easy",
     "homepage": "",
     "author": "Hazmi Hafiz <hazmihafiz@gmail.com>",
