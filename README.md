@@ -1,16 +1,19 @@
 # paginate
 
-A simple and fast truncated pagination generator
+Simple and fast truncated pagination generator
+
+![shield](https://img.shields.io/github/workflow/status/hazmihaz/paginate/Node.js%20CI)
+![shield](https://img.shields.io/npm/v/@hazmihaz/paginate)
+![shield](https://img.shields.io/npm/l/@hazmihaz/paginate)
+
+
+## Usage
 
 ```javascript
 paginate(31, 100)
-```
-
-returns:
-
-```javascript
 // => [1, '...', 30, 31, 32, '...', 100]
 ```
+
 
 ## Installation
 
@@ -24,14 +27,6 @@ or
 yarn add @hazmihaz/paginate
 ```
 
-## Usage
-
-```javascript
-import paginate from 'paginate'
-
-const pagination = paginate(30, 100, 2, '_')
-// => [1, '_', 28, 29, 30, 31, 32, '_', 100]
-```
 
 ### Params
 
@@ -42,7 +37,14 @@ const pagination = paginate(30, 100, 2, '_')
 | delta   | <code>Number</code> | 1         | Number of pages before and after current page |
 | separator   | <code>String</code> | "..."         | Separator |
 
-### More Examples
+### Examples
+
+```javascript
+import paginate from 'paginate'
+
+const pagination = paginate(30, 100, 2, '_')
+// => [1, '_', 28, 29, 30, 31, 32, '_', 100]
+```
 
 ```javascript
 paginate(1, 100)
