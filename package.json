@@ -1,7 +1,7 @@
 {
     "name": "@hazmihaz/paginate",
-    "version": "0.2.1",
-    "description": "Paginate - generate ellipsis-separated pagination - fast and easy",
+    "version": "0.3.0",
+    "description": "Paginate - generate ellipsis-separated truncated pagination - fast and easy",
     "homepage": "",
     "author": "Hazmi Hafiz <hazmihafiz@gmail.com>",
     "repository": {
@@ -17,11 +17,24 @@
     ],
     "main": "./index.js",
     "scripts": {
-        "test": "mocha -w"
+        "test": "mocha -w",
+        "tes-ci": "mocha"
     },
     "devDependencies": {
+        "chai": "^4.2.0",
         "mocha": "^8.2.1",
-        "mocha-each": "^2.0.1",
-        "chai": "^4.2.0"
-    }
+        "mocha-each": "^2.0.1"
+    },
+    "browserslist": {
+        "production": [
+            "defaults",
+            "not ie",
+            "maintained node versions"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+      }
 }
