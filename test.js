@@ -87,6 +87,20 @@ describe('Pagination algorithm - custom delta', () => {
     )
 })
 
+describe('Pagination custom separator', () => {
+    forEach([
+        [1, 20, 2, '_', [1, 2, 3, '_', 20]],
+        [14, 20, 2, '👀', [1, '👀', 12, 13, 14, 15, 16, '👀', 20]],
+        [16, 20, 3, '-', [1, '-', 13, 14, 15, 16, 17, 18, 19, 20]],
+    ]).it(
+        'should paginate current page %d of total %d pages with delta %d and separator %s',
+        (current, total, delta, separator, expected) => {
+            const value = paginate(current, total, delta, separator)
+            assert.deepStrictEqual(value, expected)
+        }
+    )
+})
+
 describe('Pagination performance', () => {
     it('should maintains performance', () => {
         const t0 = performance.now()

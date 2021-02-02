@@ -1,4 +1,4 @@
-module.exports = (current, total, delta = 1) => {
+module.exports = (current, total, delta = 1, separator = '...') => {
     if (total <= 1) return [1]
 
     const center = [current]
@@ -22,8 +22,8 @@ module.exports = (current, total, delta = 1) => {
     if (includeLeft) filteredCenter.unshift(2)
     if (includeRight) filteredCenter.push(total - 1)
 
-    if (includeLeftDots) filteredCenter.unshift('...')
-    if (includeRightDots) filteredCenter.push('...')
+    if (includeLeftDots) filteredCenter.unshift(separator)
+    if (includeRightDots) filteredCenter.push(separator)
 
     return [1, ...filteredCenter, total]
 }
